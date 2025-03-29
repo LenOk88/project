@@ -1,12 +1,6 @@
 import React from 'react';
 import { Button, Container, FormControl, Navbar, Nav, Form } from 'react-bootstrap';
 import logo from './img.png';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from '../Pages/Home';
-import About from '../Pages/About';
-import Contacts from '../Pages/Contacts';
-import Blog from '../Pages/Blog';
-
 export default function Header() {
     return (
         <>
@@ -15,8 +9,7 @@ export default function Header() {
                     <Navbar.Brand href='/'>
                         <img
                             src={logo}
-                            height="30"
-                            width="30"
+                            style={{ width: "30px", height: "30px", borderRadius: "15px" }}
                             alt='Logo'
                         />
                     </Navbar.Brand>
@@ -39,16 +32,6 @@ export default function Header() {
                 </Container>
             </Navbar>
 
-            <Router>
-                <Routes>
-                <Route path="/" component={<Home />} />
-                <Route path="/about" component={<About />} />
-                <Route path="/contacts" component={<Contacts />} />
-                <Route path="/blog" component={<Blog />} />
-
-                </Routes>
-            </Router>
-            
         </>
     )
 }
