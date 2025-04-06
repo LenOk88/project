@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+.root {
+  padding-top: 48px;
+}
+
 nav {
   display: inline;
 }
@@ -19,20 +23,106 @@ nav {
 a.nav-link {
   width: auto;
   text-align: center;
+  color: bisque;
+}
+
+.nav-item {
+  color: #333;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.nav-item:hover {
+  color: white;
+}
+
+.nav-pills {
+  --bs-nav-link-hover-color: white !important;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg: rgb(111, 107, 107) !important;
+}
+
+.nav-item:active {
+  color: white;
+}
+
+.col {
+  background: black;
+  height: 100vh;
+  width: 200px;
+}
+
+a.nav-link:active {
+  color: white;
+}
+
+.home-bg {
+  background: black;
+  height: 100vh;
 }
 
 div.container {
   margin: 0;
+  min-width: 100vw;
 }
 
 input.form-control {
   width: 300px;
-  margin-right: 10px;
+  height: 35px;
+  margin: 5px 10px 0 0;
 }
 
-form.container {
+.container {
   display: inline-flex;
   justify-content: flex-end;
+  height: 45px;
+}
+
+.home-box {
+  display: block;
+}
+
+.about-box {
+  background: #e6e2e2;
+}
+
+.form-box {
+  justify-content: center;
+  align-items: center;
+  background: #e6e2e2;
+  height: 100vh;
+}
+
+.form {
+  width: 500px;
+  border: 1px solid #c7c4c4;
+  border-radius: 8px;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.form-label {
+  margin-top: 25px;
+}
+
+.form-check-input {
+  border: 1px solid !important;
+}
+
+.form-check {
+  margin-top: 10px;
+}
+
+input.input-form.form-control {
+  width: 460px !important;
+  border: 1px solid;
+}
+
+.textarea-form.form-control {
+  border: 1px solid;
 }
 
 nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
@@ -40,22 +130,135 @@ nav.navbar.navbar-expand-md.navbar-dark.bg-dark {
   padding: 3px;
 }
 
+.btn.btn-outline-info {
+  background: rgb(111, 107, 107);
+  color: bisque;
+  border: 2px white;
+  height: 35px;
+  margin-top: 5px;
+}
+
+.btn.btn-outline-info:hover {
+  background: black;
+  color: white;
+}
+
+.btn.btn-primary {
+  background: rgb(111, 107, 107);
+  border: 1px black;
+  color: bisque;
+  margin-top: 25px;
+  width: 130px;
+}
+
+.btn.btn-primary:hover {
+  background-color: black;
+  color: white;
+}
+
+.text-center {
+  color: black;
+  margin: 0;
+}
+
+.card-text {
+  color: black;
+}
+
+.card-title.h5 {
+  color: black;
+}
+
 .d-block.w-100 {
-  width: auto;
-  height: auto;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  background-position: center;
+  display: flex;
+}
+
+.carousel-caption {
+  margin-bottom: 300px;
+}
+
+.carousel-title {
+  color: rgb(59, 53, 53);
+}
+
+.carousel-text {
+  color: black
+}
+
+.backgrund {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+
+}
+
+.backgrund::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+  pointer-events: none;
+  z-index: 2;
+}
+
+.dark-screen {
+  background: black;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark-screen-text {
+  color: rgb(150, 146, 141);
+  margin: 20px;
+  text-align: center;
+}
+
+.img-home {
+  object-fit: cover;
+  width: 50%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 0;
+  margin: 0;
+}
+
+img.d-block.w-100 {
+  width: 100px;
+  block-size: cover;
+  opacity: 0.6;
+
+}
+
+img.card-img-bottom {
+  max-width: 500px;
+  min-width: 350px;
+}
+
+img.card-img-top {
+  max-width: 500px;
+  min-width: 350px;
 }
 
 h1 {
   color: black;
 }
 
-.root {
-  padding-top: 48px;
-}
-
 .box {
   display: flex;
-  width: 800px;
+  width: 100vw;
 }
 
 .text-box {
@@ -77,18 +280,29 @@ img {
   padding: 0;
   width: 50%;
   height: 300px;
+  width: 300px;
   margin-left: 10px;
-}
-
-.img-about {
-  width: 350px;
 }
 
 figure.blog-box {
   display: flex;
   margin-top: 20px;
   max-width: 100%;
-  ;
+}
+
+.blog-box {
+  background: #e6e2e2;
+  padding: 0;
+}
+
+.sidebar {
+  background: #e6e2e2;
+  padding-right: 40px !important;
+  padding: 20px;
+}
+
+h5.text-center.mt-5 {
+  margin: 20px !important;
 }
 
 .text-blog {
@@ -101,7 +315,7 @@ figure.blog-box {
   text-overflow: ellipsis;
 }
 
-.img-box {
-  width: 150px;
-  height: 50px;
+.img-box.figure-img.img-fluid {
+  width: 130px;
+  height: 110px;
 }

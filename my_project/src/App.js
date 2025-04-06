@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import About from './Pages/About';
 import Contacts from './Pages/Contacts';
 import Blog from './Pages/Blog';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
