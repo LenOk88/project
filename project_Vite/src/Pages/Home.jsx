@@ -1,14 +1,6 @@
 import React from 'react';
 import HelloImg from "../assets/Hello.jpg";
-import {
-  Button,
-  Card,
-  Container,
-  CardMedia,
-  CardContent,
-  Grid,
-  Typography,
-} from '@mui/material';
+import { Button, Card, Container, CardMedia, CardContent, Grid, Typography } from '@mui/material';
 
 export default function Home() {
   return (
@@ -30,10 +22,10 @@ export default function Home() {
         </Typography>
 
         <Grid display='flex' justifyContent="center" gap={2}>
-          {/* Family Card */}
+          {}
           <Grid className="card" item xs={12} md={3}>
-            <Card sx={{ padding: 0, maxWidth:320 }}>
-              <CardMedia 
+            <Card sx={{ padding: 0, maxWidth: 320 }}>
+              <CardMedia
                 component="img"
                 height="200"
                 image="https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -58,9 +50,9 @@ export default function Home() {
             </Card>
           </Grid>
 
-          {/* Work Card */}
-          <Grid  className="card" item xs={12} md={3}>
-            <Card sx={{ padding: 0, maxWidth: 320  }}>
+          {}
+          <Grid className="card" item xs={12} md={3}>
+            <Card sx={{ padding: 0, maxWidth: 320 }}>
               <CardContent>
                 <Typography variant="h6">Work</Typography>
                 <Typography variant="body2" className="card-text">
@@ -85,9 +77,9 @@ export default function Home() {
             </Card>
           </Grid>
 
-          {/* Travel Card */}
+          {}
           <Grid className="card" item xs={12} md={3}>
-            <Card sx={{ padding: 0, maxWidth: 320  }}>
+            <Card sx={{ padding: 0, maxWidth: 320 }}>
               <CardMedia
                 component="img"
                 height="200"

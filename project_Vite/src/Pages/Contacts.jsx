@@ -9,7 +9,7 @@ export default function Contacts() {
           Contact me
         </Typography>
 
-        {/* Поле для email */}
+        { }
         <TextField className='input-form'
           fullWidth
           label="Email address"
@@ -20,7 +20,7 @@ export default function Contacts() {
           margin="normal"
         />
 
-        {/* Текстовая область */}
+        { }
         <TextField
           fullWidth
           label="Example textarea"
@@ -30,13 +30,13 @@ export default function Contacts() {
           margin="normal"
         />
 
-        {/* Чекбокс */}
+        { }
         <FormControlLabel
           control={<Checkbox />}
           label="Check me out"
         />
 
-        {/* Кнопка отправки */}
+        { }
         <Button className='button-form' variant="contained" type="submit" fullWidth>
           Submit
         </Button>

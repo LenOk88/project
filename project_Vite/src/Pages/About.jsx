@@ -26,7 +26,7 @@ export default function About() {
   return (
     <Container className='padding-box'>
       <Grid container spacing={3}>
-        {/* Колонка с Tabs слева */}
+        {}
         <Grid item xs={3}>
           <Box
             sx={{
